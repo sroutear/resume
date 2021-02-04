@@ -1,0 +1,297 @@
+*{
+    font-family: "微軟正黑體", "Meiryo", "メイリオ";
+    /* border: 1px solid #333; */
+}
+
+body { 
+    /* padding-top: 70px;  */
+    padding: 0;
+}
+
+.itemWrap{
+    padding: 20px 50px;
+}
+
+/* ============font styling============ */
+h2 {
+    font-family: 'Oswald';
+    margin-bottom: 3%;
+}
+
+h3, p {
+    font-family: 'Bitter';
+}
+
+h1, h4 {
+    font-family: 'Roboto Slab';
+}
+
+h5 {
+    font-family: 'Bree Serif';
+}
+
+/* ============各區中標題============ */
+.Ctitle{
+    font-weight: 500;
+}
+
+.Ctitle::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 8px auto 40px;
+    background-color: #ff6600;
+}
+ 
+
+/* ============導覽列============ */
+.navbar {
+    font-size: 1.7em;
+    font-variant: small-caps;
+    word-spacing: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+
+/* ============第一區塊 about============ */
+section.about {
+    background-color: #eee;
+    padding: 100px;
+}
+
+span.small-name{
+    font-size: 20px;
+}
+
+p.nameTxt {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.left {
+    transform: rotate(-5deg);
+}
+
+.r3icon{
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+}
+
+.sqr {
+    background-color: #FF9C91;
+    display: inline-block;
+}
+
+.sqr1 {
+    width: 20px;
+    height: 20px;
+    transition: 0.2s;
+}
+  
+.sqr2 {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.sqr3 {
+    width: 15px;
+    height: 15px;
+}
+
+.sqr4 {
+    width: 25px;
+    height: 25px;
+    transition: 0.1s;
+}
+
+.sqr5 {
+    width: 10px;
+    height: 10px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 765px) {
+    .sqr {
+      background-color: transparent;
+    }
+  }
+
+/* ============第二區塊 experience============ */
+section.experience{
+    padding: 50px 30px;
+}
+
+.work-item {
+    position: relative;
+    margin: 15px 0;
+    padding-left: 90px;
+}
+
+.work-period {
+    position: absolute;
+    display: block;
+    left: 0;
+    padding: 1px 3px 1px 8px;
+    font-size: 12px;
+    border: 1px solid #ff9a9e;
+    border-right: none;
+}
+
+.work-period:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -7px;
+    top: 3px;
+    width: 13.2px;
+    height: 13.2px;
+    border-right: 1px solid #ff9a9e;
+    border-bottom: 1px solid #ff9a9e;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.work-company {
+    margin: 5px 0;
+}
+
+.work-position {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.work-des {
+    font-size: 14px;
+}
+
+.work-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 65px;
+    background-color: #ff9a9e;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.work-item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 120%;
+    top: 6px;
+    left: 70px;
+    background-color: #ff9a9e;
+}
+  
+i.far{
+    margin-right: 5px;
+}
+
+span.company{
+    margin-right: 10px;
+}
+
+
+/* ============第三區塊 skills============ */
+.skills {
+    padding: 50px 30px 10px 30px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.progress-striped,  .progress-bar, .progress {
+    /* height: 15px; */
+    /* font-size: 40px; */
+}
+
+.progress {
+    margin-bottom: 3%;
+    /* height: 20px; */
+}
+
+h4.jpb-skill {
+    font-size: 1.22em;
+    /* color: #6c9dc6; */
+    color: steelblue;
+}
+    
+
+/* ============第四區塊 portfolio============ */
+.portfolio {
+    padding: 1%;
+    padding-top: 50px;
+}
+
+.work-use{
+    font-style: italic;
+    /* font-size: 18px; */
+}
+
+.work-use::before{
+    content: "\f02c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.img-thumbnail{
+    width: 420px;
+    height: 280px;
+}
+
+.img-thumbnail:hover{
+    opacity: 0.5;
+}
+
+.p-item{
+    padding: 10px;
+}
+
+/* ============第五區塊 contact============ */
+.contact {
+    padding: 20px 0;
+    background-color: #eee;
+}
+
+.contactme {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.phone::before{
+    content: "\f095";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.mail::before{
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+
+/* ============分隔線樣式============ */
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
