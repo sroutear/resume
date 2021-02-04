@@ -215,11 +215,6 @@ span.company{
     background-color: #eee;
 }
 
-.progress-striped,  .progress-bar, .progress {
-    /* height: 15px; */
-    /* font-size: 40px; */
-}
-
 .progress {
     margin-bottom: 3%;
     /* height: 20px; */
